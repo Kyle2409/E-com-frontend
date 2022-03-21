@@ -102,7 +102,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 #login {
   border: 5px solid black;
   width: 35%;

@@ -138,7 +138,7 @@ export default {
 </script> 
 
 
-<style>
+<style scoped>
 #register{
   border: 5px solid black;
   width: 35%;
