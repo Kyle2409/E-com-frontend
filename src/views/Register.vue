@@ -11,9 +11,9 @@
     <Form @submit="handleRegister" >
       <div v-if="!successful">
       <div class="form-group">
-        <label for="fullname"></label>
-        <Field name="fullname" placeholder="fullname" class="form-control"/>
-          <ErrorMessage name="username" class="error-feedback" />
+        <label for="name"></label>
+        <Field name="name" placeholder="name" class="form-control"/>
+          <ErrorMessage name="name" class="error-feedback" />
       </div>
       <div class="form-group">
         <label for="email"></label>
@@ -22,10 +22,10 @@
           <ErrorMessage name="email" class="error-feedback" />
       </div>
       <div class="form-group">
-        <label for="phone_number"></label>
-        <Field name="phone_number"  class="form-control"
-        placeholder="phone number" type="number"/>
-          <ErrorMessage name="phone_number" class="error-feedback" />
+        <label for="contact"></label>
+        <Field name="contact"  class="form-control"
+        placeholder="contact" type="number"/>
+          <ErrorMessage name="contact" class="error-feedback" />
       </div>
       
       <div class="form-group">
@@ -69,7 +69,7 @@ export default {
   },
   data() {
     const schema = yup.object().shape({
-      fullname: yup
+      name: yup
         .string()
         .required("fullname is required!")
         .min(3, "Must be at least 3 characters!")
@@ -84,7 +84,7 @@ export default {
         .required("Password is required!")
         .min(6, "Must be at least 6 characters!")
         .max(40, "Must be maximum 40 characters!"),
-     phone_number: yup
+     contact: yup
         .string()
         .required("Password is required!")
         // .min(6, "Must be at least 6 characters!")

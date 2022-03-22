@@ -16,9 +16,12 @@
             aria-label="Default select example"
           >
             <option selected value="">Display All</option>
-            <option value="mask">Masks</option>
-            <option value="wetsuits">Wetsuits</option>
-            <option value="camera">Camera</option>
+            <option value="One Piece">One Piece</option>
+            <option value="My Hero Academia">My Hero Academia</option>
+            <option value="Jujutsu Kaisen">Jujutsu Kaisen</option>
+            <option value="Haikyuu">Haikyuu</option>
+            <option value="Demon Slayer">Demon Slayer</option>
+            
           </select>
         </div>
         <div class="col-4">
@@ -102,7 +105,7 @@ export default {
    
   },
   mounted() {
-    fetch("https://pinkay-and-kuro-backend2.herokuapp.com/products", {
+    fetch("https://pinkay-and-kuro-final.herokuapp.com/products", {
       method: "GET",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -112,7 +115,7 @@ export default {
       .then((json) => {
         this.product = json;
         if (localStorage.getItem("jwt")) {
-          fetch("https://pinkay-and-kuro-backend2.herokuapp.com/users/", {
+          fetch("https://pinkay-and-kuro-final.herokuapp.com/users/", {
             method: "GET",
             headers: {
               "Content-type": "application/json; charset=UTF-8",

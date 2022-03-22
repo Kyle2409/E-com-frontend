@@ -1,10 +1,10 @@
 import axios from 'axios';
-const API_URL = 'https://eds-backend.herokuapp.com/users/';
+const API_URL = 'https://pinkay-and-kuro-final.herokuapp.com/users/';
 class AuthService {
   login(user) {
     return axios
       .post(API_URL + 'signin', {
-        fullname: user.fullname,
+        email: user.email,
         password: user.password
       })
       .then(response => {
@@ -21,9 +21,9 @@ class AuthService {
     console.log(user)
     console.log(API_URL + 'signup')
     return axios.post(API_URL + 'signup', {
-      fullname: user.fullname,
+      name: user.name,
       email: user.email,
-      phone_number: user.phone_number,
+      contact: user.contact,
       password: user.password
     });
 

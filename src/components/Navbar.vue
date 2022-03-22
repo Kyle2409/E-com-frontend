@@ -23,16 +23,16 @@
         <MDBNavbarItem router-link :to="{name:'Register'}">
           Register
         </MDBNavbarItem>
-        <MDBNavbarItem router-link v-if="currentUser" :to="{name:'Profile'}">
+        <MDBNavbarItem router-link  :to="{name:'Profile'}">
           Profile
         </MDBNavbarItem> 
-        <MDBNavbarItem router-link v-if="currentUser" :to="{name:'Product'}">
+        <MDBNavbarItem router-link  :to="{name:'Product'}">
           Products
         </MDBNavbarItem>
-        <MDBNavbarItem router-link v-if="currentUser" :to="{name:'Cart'}">
+        <MDBNavbarItem router-link :to="{name:'Cart'}">
           Cart
         </MDBNavbarItem>
-        <button class="btn" v-if="currentUser" @click="logOut">Logout</button>
+        <button class="btn"  @click="logOut">Logout</button>
       </MDBNavbarNav>
     </MDBCollapse>
   </MDBNavbar>
