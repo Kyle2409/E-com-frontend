@@ -5,12 +5,18 @@ import Login from '@/views/Login.vue'
 import Register from '@/views/Register.vue'
 import Product from '@/views/Product.vue'
 import Cart from '@/views/Cart.vue'
+import About from '@/views/About.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About
   },
   {
     path: '/profile',

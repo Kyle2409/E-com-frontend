@@ -59,7 +59,7 @@ export default {
 
 <style>
 body {
-  background: linear-gradient(0deg, rgba(224, 8, 231, 0.7), rgba(117, 17, 117, 0.7)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://images.pexels.com/photos/5709615/pexels-photo-5709615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
 .neu-border {

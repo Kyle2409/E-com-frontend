@@ -26,7 +26,6 @@ class AuthService {
       contact: user.contact,
       password: user.password
     });
-
   }
 }
 export default new AuthService();

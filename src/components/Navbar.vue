@@ -17,6 +17,9 @@
         <MDBNavbarItem router-link to="/">
           Home
         </MDBNavbarItem>
+         <MDBNavbarItem router-link :to="{name:'About'}">
+          About
+        </MDBNavbarItem>
         <MDBNavbarItem router-link :to="{name:'Login'}">
           Login
         </MDBNavbarItem>
